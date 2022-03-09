@@ -11,11 +11,11 @@ public class P20if {
         int[] intArr = {one, two, three};
 
         if(one==two&&one==three){
-            result = 10000 + one*1000;
+            result = 10000 + one * 1000;
         } else if(one==two||one==three){
-            result = 1000 + one*100;
+            result = 1000 + one * 100;
         } else if(two==three) {
-            result = 1000 + two*100;
+            result = 1000 + two * 100;
         } else {
             result = Arrays.stream(intArr).max().getAsInt() * 100;
         }
